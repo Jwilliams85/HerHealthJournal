@@ -1,12 +1,13 @@
-import axios from 'axios'
+import axios from "axios";
 
-export default function axiosWithAuth() {
-    const token = window.localStorage.getItem('token');
-
+const axiosWithAuth = () => {
+    const token = localStorage.getItem("token");
     return axios.create({
+        baseURL: "https://amp-node-api.herokuapp.com/api/",
         headers: {
-            authorization: token, 
-        },
-        baseURL: ""
+            Authorization: token
+        }
     });
 };
+
+export default axiosWithAuth;

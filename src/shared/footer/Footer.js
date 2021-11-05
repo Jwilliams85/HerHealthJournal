@@ -7,13 +7,13 @@ export default function Footer() {
         <>
             <BottomWrapper>
                 <div className = "botBtn">
-                    <Link to="/login" className="botLink">Login</Link>
+                    <Link to="/LoginForm" className="botLink">Login</Link>
                     <span className="BorderTopBottom"></span>
                     <span className="BorderLeftRight"></span>
                 </div>
 
                 <div className = "botBtn">
-                    <Link to="/register" className="botLink">Register</Link>
+                    <Link to="/Register" className="botLink">Register</Link>
                     <span className="BorderTopBottom"></span>
                     <span className="BorderLeftRight"></span>
                 </div>
@@ -22,3 +22,4 @@ export default function Footer() {
         </>
     )
 }
+
